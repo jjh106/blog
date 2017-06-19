@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Be ambitious!
+title: JJH's blog
 subtitle:
 description:
 author: Jae Ho  
@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: clean-blog
+theme: very-simple
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
