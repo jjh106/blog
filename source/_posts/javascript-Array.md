@@ -4,19 +4,17 @@ date: 2017-06-20 00:19:31
 tags: javascript
 ---
 
-# 배열(Array)
-
 ### 1. 배열 만들기
 
-리터럴 방식 ) var menus = ["menu1", "menu2", "menu3", "menu4"];
-
-생성자 방식 ) var menus = new Array("menu1", "menu2", "menu3", "menu4");
+> 리터럴 방식 ) var menus = ["menu1", "menu2", "menu3", "menu4"];
+>
+> 생성자 방식 ) var menus = new Array("menu1", "menu2", "menu3", "menu4");
 
 ------
 
 ### 2. 배열 요소의 개수
 
-배열의 프로퍼티 중 length를 이용하여 배열 요소의 개수를 알아낼 수 있다.
+> 배열의 프로퍼티 중 length를 이용하여 배열 요소의 개수를 알아낼 수 있다.
 
 ```javascript
 var users = ["user1", "user2", "user3", "user4"];
@@ -43,7 +41,7 @@ for( var i=0; i<menus.length; i++){
 var menus = 배열.join([매개변수]);
 ```
 
-매개변수 : 선택사항이며, 배열 요소를 구분하기 위해 사용한다. 생략하게 되면 쉼표가 구분자로 사용된다.
+> 매개변수 : 선택사항이며, 배열 요소를 구분하기 위해 사용한다. 생략하게 되면 쉼표가 구분자로 사용된다.
 
 ```javascript
 var menus = ["menu1", "menu2", "menu3", "menu4"];
@@ -96,7 +94,7 @@ console.log("newMenus : "+menus.join(","));
 
 #### 6-3. N번째 위치에 추가
 
-사용법 ) var result = 배열.splice(시작위치, 삭제할 요소의 갯수(0을 적용하면 추가함), [추가할요소])
+> 사용법 ) var result = 배열.splice(시작위치, 삭제할 요소의 갯수(0을 적용하면 추가함), [추가할요소])
 
 ```javascript
 var menus = ["menu1", "menu2", "menu3", "menu4"];
@@ -154,13 +152,13 @@ console.log("newMenu : "+menus.join(","));
 
 #### 8-1. sort() 메소드
 
-배열 요소를 오름차순 또는 내림차순으로 정렬해준다.
-
-사용법 ) var result = 배열.sort(compareFunction);
-
-sort() 함수는 배열 요소를 모두 문자열로 간주하고 알파벳순으로 정렬하기 때문에 비교 함수가 필요하다.
-
-compareFunction : 정렬 순서를 정의하는 함수로 생략할 경우 오름차순으로 처리한다. 
+> 배열 요소를 오름차순 또는 내림차순으로 정렬해준다.
+>
+> 사용법 ) var result = 배열.sort(compareFunction);
+>
+> sort() 함수는 배열 요소를 모두 문자열로 간주하고 알파벳순으로 정렬하기 때문에 비교 함수가 필요하다.
+>
+> compareFunction : 정렬 순서를 정의하는 함수로 생략할 경우 오름차순으로 처리한다. 
 
 ```javascript
 var userNames = ["bbb", "ddd", "ccc", "aaa"];
@@ -220,9 +218,9 @@ console.log("newAryData :"+ aryData.join(","));
 
 ##### * compareFunction
 
-뺄셈의 결과가 음수라는 것(a - b)은 왼쪽 숫자가 오른쪽 숫자보다 작다는 것을 의미한다.(오름차순)
-
-뺄셈의 결과가 양수라는 것(b - a)은 왼쪽 숫자가 오른쪽 숫자보다 크다는 것을 의미한다.(내림차순)
+> 뺄셈의 결과가 음수라는 것(a - b)은 왼쪽 숫자가 오른쪽 숫자보다 작다는 것을 의미한다.(오름차순)
+>
+> 뺄셈의 결과가 양수라는 것(b - a)은 왼쪽 숫자가 오른쪽 숫자보다 크다는 것을 의미한다.(내림차순)
 
 ```javascript
 var compareFunction1 = function(num1, num2) {
@@ -277,7 +275,7 @@ student.sort(function(a, b) { // 내림차순
 
 #### 9-1. reverse()
 
-배열 안에 있는 원소들의 순서를 반대로 정렬하여 반환한다.
+> 배열 안에 있는 원소들의 순서를 반대로 정렬하여 반환한다.
 
 ```javascript
 var ary = ["red", "blue", "yellow", "orange"];
@@ -288,7 +286,7 @@ console.log(ary.reverse());
 
 #### 9-2. concat()
 
-배열 뒤에 각 전달인자들을 이어붙여 배열을 새롭게 생성하여 반환한다.
+> 배열 뒤에 각 전달인자들을 이어붙여 배열을 새롭게 생성하여 반환한다.
 
 ```javascript
 var ary = ["red", "blue", "yellow", "orange"];
@@ -300,7 +298,7 @@ console.log(ary.concat(ary2));
 
 #### 9-3. toString()
 
-배열의 원소를 문자열로 반환한다.
+> 배열의 원소를 문자열로 반환한다.
 
 ```javascript
 var ary = ["red", "blue", "yellow", "orange"];
@@ -311,11 +309,11 @@ console.log(ary.toString());
 
 #### 9-4. indexOf()
 
-배열 내부에서 찾고자 하는 값이 존재하는지를 알려준다.
-
-존재하지 않는다면 "-1"을 반환하고, 존재한다면 가장 첫 번째의 인덱스를 반환한다. 
-
-첫 번째 인자는 찾고자 하는 값이고 두 번째 인자는 찾고자 하는 범위이다.
+> 배열 내부에서 찾고자 하는 값이 존재하는지를 알려준다.
+>
+> 존재하지 않는다면 "-1"을 반환하고, 존재한다면 가장 첫 번째의 인덱스를 반환한다. 
+>
+> 첫 번째 인자는 찾고자 하는 값이고 두 번째 인자는 찾고자 하는 범위이다.
 
 ```javascript
 var a = [0, 1, 2, 3, 4];
@@ -329,4 +327,4 @@ a.indexOf(5); // 반환값은 -1
 
 *더 많은 메소드들은 MDN에서 찾으며 공부하자 !*
 
-#### [LINK : Array MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)
+#### [Array MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array)
