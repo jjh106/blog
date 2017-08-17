@@ -1,7 +1,9 @@
 ---
 title: Vuex-Start
 date: 2017-08-14 22:33:34
-tags: Vue, Vuex
+tags:
+  - Vue
+  - Vuex
 ---
 
 *vuex를 공부하자!*

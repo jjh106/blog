@@ -1,7 +1,9 @@
 ---
 title: Vuex-State
 date: 2017-08-16 23:40:01
-tags: Vue, Vuex
+tags: 
+  - Vue
+  - Vuex
 ---
 
 ### # Vuex 준비
@@ -125,9 +127,9 @@ computed: {
 
 >  Vuex가 각각의 데이터를 자신의 컴포넌트에서 관리할 수 있기 때문에 App.vue의 템플릿을 수정해준다
 >
-> 위에서 작성한 methods와 computed 또한 필요없다!.......
+>  위에서 작성한 methods와 computed 또한 필요없다!.......
 >
-> App.vue에는 컴포넌트 설정만 남겨둔다.
+>  App.vue에는 컴포넌트 설정만 남겨둔다.
 
 ```javascript
 // 변경 전
